@@ -1,0 +1,165 @@
+.panel.with-nav-tabs .panel-heading {
+    padding: 5px 5px 0 5px;
+}
+
+.panel.with-nav-tabs .nav-tabs {
+    border-bottom: none;
+}
+
+.panel.with-nav-tabs .nav-justified {
+    margin-bottom: -1px;
+}
+
+.history {
+    height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: rtl;
+}
+
+.history::before {
+    content: 'more';
+    color: blue;
+}
+
+.filler {
+    height: 176px;
+    width: 300px;
+    background-color: hsla(500, 46%, 35%, 0.803)
+}
+
+.star {
+    shape-outside: url(../images/star-example.png);
+    shape-margin: 20px;
+    margin-top: 35px;
+}
+
+.poly-content::before {
+    content: "";
+    float: left;
+    width: 300px;
+    height: 150px;
+    shape-outside: url(../images/poly-example.png);
+    shape-margin: 20px;
+    margin-top: 65px;
+}
+
+.gradient-content::before {
+    content: "";
+    float: left;
+    display: block;
+    width: 150px;
+    height: 150px;
+    /* background: hsla(0, 78%, 34%, 0.605); */
+    background-image: radial-gradient(circle farthest-side at 5px 5px, rgba(0, 212, 255, 1) 20%, rgba(9, 9, 121, 0) 90%);
+    shape-outside: radial-gradient(circle farthest-side at 5px 5px, rgba(0, 212, 255, 1) 20%, rgba(9, 9, 121, 0) 90%);
+    shape-margin: 10px;
+    /* border: 1px solid #aaa; */
+
+    /* shape-outside: linear-gradient(45deg, rgba(0, 212, 255, 1) 30%, rgba(7, 7, 123, 0) 10%); */
+    /* shape-outside: url(../images/poly-example.png);*/
+
+}
+
+.gradient-threshold-content::before {
+    content: "";
+    float: left;
+    display: block;
+    width: 150px;
+    height: 150px;
+    /* background: hsla(0, 78%, 34%, 0.605); */
+    background-image: radial-gradient(circle farthest-side at 5px 5px, rgba(0, 212, 255, 1) 20%, rgba(9, 9, 121, 0) 90%);
+    shape-outside: radial-gradient(circle farthest-side at 5px 5px, rgba(0, 212, 255, 1) 20%, rgba(9, 9, 121, 0) 90%);
+    /* shape-margin: 10px; */
+    shape-image-threshold: .2;
+    /* border: 1px solid #aaa; */
+
+    /* shape-outside: linear-gradient(45deg, rgba(0, 212, 255, 1) 30%, rgba(7, 7, 123, 0) 10%); */
+    /* shape-outside: url(../images/poly-example.png);*/
+
+}
+
+
+.gradient-threshold-content::after {
+    content: "";
+    float: left;
+    display: block;
+    width: 150px;
+    height: 150px;
+    /* background: hsla(0, 78%, 34%, 0.605); */
+    background-image: radial-gradient(circle farthest-side at 0px 150px, rgba(0, 212, 255, 1) 20%, rgba(9, 9, 121, 0) 90%);
+    shape-outside: radial-gradient(circle farthest-side at 0px 150px, rgba(0, 212, 255, 1) 20%, rgba(9, 9, 121, 0) 90%);
+    shape-image-threshold: .2;
+    /* border: 1px solid #aaa; */
+
+    /* shape-outside: linear-gradient(45deg, rgba(0, 212, 255, 1) 30%, rgba(7, 7, 123, 0) 10%); */
+    /* shape-outside: url(../images/poly-example.png);*/
+
+}
+
+.circle {
+    float: left;
+    display: block;
+    width: 150px;
+    height: 150px;
+    shape-outside: circle(50%);
+    margin: 20px;
+    padding: 20px;
+    border: 10px solid #FC466B;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    clip-path: circle(50%);
+
+}
+
+.inset {
+    float: left;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    padding: 100px 20px 20px 20px;
+    border: 10px solid #FC466B;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    shape-outside: inset(0 30px 100px 0 round 40px);
+    clip-path: inset(0 30px 100px 0 round 40px);
+
+}
+
+.ellipse {
+    float: left;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid #FC466B;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    shape-outside: ellipse(30% 60% at 5%);
+    shape-margin: 20px;
+    clip-path: ellipse(30% 60% at 5%);
+
+}
+
+.polygon {
+    float: left;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+    border: 10px solid #FC466B;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    shape-outside: polygon(0px 0px, 79px 130px, 92.11% 90.53%, 2px 176px);
+    shape-margin: 20px;
+    clip-path: polygon(0px 0px, 79px 130px, 92.11% 90.53%, 2px 176px);
+
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
